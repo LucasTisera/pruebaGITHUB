@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header "
+    "article article article"
+    "none footer footer"
+    ;
+    gap: 20px;
+}
+
+.gridcontainer > header {
+    grid-area: header;
+}
+
+.gridcontainer > article {
+    grid-area: article;
+    padding: 10px;
+}
+
+.gridcontainer > footer {
+    grid-area: footer;
+    padding: 10px;
+    align-items: center;
+}
+
+.gridintegrantes {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "nav    nav    nav "
+    "titulo titulo titulo"
+    "lista  lista  lista "
+    "none footer footer"
+    ;
+    
+
+}
+
+.gridintegrantes > header {
+    grid-area: nav;
+}
+
+.gridintegrantes > ol {
+    grid-area: lista;
+}
+
+.gridintegrantes > h3 {
+    grid-area: titulo;
+}
+
+.gridintegrantes > .footerintegrantes {
+    grid-area: footer;
+}
+
+.header {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+body {
+    font-family: sans-serif;
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navegador a {
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+
+
+.navegador a:hover {
+    color: red;
+}
+
+
+.footer {
+    text-align: center;
+    align-self: flex-end;
+    width: 100%;
+}
+
+.listaintegrantes {
+    margin: 20px;
+}
+
+.listaalbumes {
+    margin: 20px;
+}
+
+.listaalbumes a:hover {
+ color: blue;
+}
+
+.titulo {
+    margin: 20px;
+}
+
+.formulario {
+    margin-left: 10px;
+}
+
+.titulocontacto {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tituloalbumes {
+    display: flex;
+    justify-content: center;
+}
+
+.listamayoresexitos a:hover {
+    color: blue;
+}
+
+.listamayoresexitos {
+    margin: 20px;
+}
+
+.titulomayoresexitos {
+    display: flex;
+    justify-content: center;
+}
+
+.formularioregistro {
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.formularioregistro h4 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.controls {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.formularioregistro .boton {
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background-color: gray;
+    color: black;
+    margin: 16px 0;
+    font-size: 20px;
+}
+
