@@ -1,3 +1,93 @@
+/*! INICIO COLORES */
 $primary: #bdc3c7;
 $secondary: #5c676e;
+$dark: #000;
+
+$palette: (
+"primario": #bdc3c7,
+"secundario": #5c676e,
+"negro": #000,
+);
+/*! FINAL COLORES */
+
+/*! INICIO CARDS */
+$card-border-radius: 20px;
+$card-border-color: map-get($map: $palette , $key: "negro" );
+/*! FINAL CARDS */
+
+/*! INICIO CARRUSEL */
+$carousel-control-color: map-get($map: $palette , $key: "secundario" );
+$carousel-control-width: 5%;
+$carousel-control-opacity: 1;
+/*! FINAL CARRUSEL */
+
+/*! INICIO TITULOS */
+@mixin titulos {
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif
+
+    
+}
+.tituloinicio {
+    @include titulos;
+}
+
+.tituloalbumes {
+    @include titulos;
+}
+
+.titulocontacto {
+    @include titulos;
+}
+
+.titulointegrantes {
+    @include titulos;
+}
+/*! FINAL TITULOS */
+
+/*! INICIO FOOTER */
+.footerinicio {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.twitter {
+    color: rgb(12, 124, 189)
+}
+
+.Instagram {
+    color: rgb(172, 90, 117)
+}
+
+.Youtube {
+    color: rgb(226, 63, 63)
+}
+
+.footeralbumes {
+    @extend .footerinicio;
+
+}
+
+.footercontacto {
+    @extend .footerinicio;
+}
+
+.footerintegrantes {
+    @extend .footerinicio;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";
