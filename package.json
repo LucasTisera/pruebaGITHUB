@@ -1,6 +1,7 @@
 {
   "name": "entregable1",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +18,5 @@
   "homepage": "https://github.com/LucasTisera/pruebaGITHUB#readme",
   "dependencies": {
     "bootstrap": "^5.2.0"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
